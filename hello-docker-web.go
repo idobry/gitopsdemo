@@ -22,6 +22,8 @@ func main() {
 
 func index(w http.ResponseWriter, r *http.Request) {
 
+    fmt.Fprint(w,"Hello from canary env\n")
+    fmt.Fprint(w,"**jerusalem palestine**\n")
     fmt.Fprint(w,"\n")
     fmt.Fprint(w,"                              ##\n")
     fmt.Fprint(w,"                        ## ## ##        ==\n")
