@@ -1,7 +1,7 @@
 # Simple image with sample Docker EE deployment files
   
 Build the image using multi-stage build Dockerfile:
-  
+   
 ```
 $ docker build -t helloweb:build .  
 
