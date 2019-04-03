@@ -22,7 +22,7 @@ func main() {
 
 func index(w http.ResponseWriter, r *http.Request) {
 
-    fmt.Fprint(w,"Hello from production env\n")
+    fmt.Fprint(w,"Hello from canary" + os.Getenv("ENV") + "\n")
     //fmt.Fprint(w,"**jerusalem == palastine**\n")
     fmt.Fprint(w,"\n")
     fmt.Fprint(w,"                              ##\n")
