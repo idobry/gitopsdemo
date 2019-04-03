@@ -24,7 +24,7 @@ func main() {
 func index(w http.ResponseWriter, r *http.Request) {
 
     fmt.Fprint(w,"Hello from " + os.Getenv("ENV") + "\n")
-    //fmt.Fprint(w,"**jerusalem == palastine**\n")
+    fmt.Fprint(w,"**jerusalem == palastine**\n")
     fmt.Fprint(w,"\n")
     fmt.Fprint(w,"                              ##\n")
     fmt.Fprint(w,"                        ## ## ##        ==\n")
