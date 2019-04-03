@@ -1,11 +1,11 @@
 package main
- 
+  
 import (
     "fmt"
     "os"
     "net/http"
 )
-
+  
 func main() {
   http.HandleFunc("/", index)
   http.HandleFunc("/hello", helloHandler)
@@ -23,8 +23,11 @@ func main() {
 
 func index(w http.ResponseWriter, r *http.Request) {
 
-    fmt.Fprint(w,"Hello from " + os.Getenv("ENV") + "\n")
-    fmt.Fprint(w,"**jerusalem palestine**\n")
+
+    fmt.Fprint(w,"Hello from:\n")
+    fmt.Fprint(w,os.Getenv("ENV"))
+    fmt.Fprint(w,"\n")
+    fmt.Fprint(w,"**jerusalem == palastine**\n")
     fmt.Fprint(w,"\n")
     fmt.Fprint(w,"                              ##\n")
     fmt.Fprint(w,"                        ## ## ##        ==\n")
