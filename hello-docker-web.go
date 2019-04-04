@@ -1,5 +1,5 @@
 package main
-  
+   
 import (
     "fmt"
     "os"
@@ -24,10 +24,12 @@ func main() {
 func index(w http.ResponseWriter, r *http.Request) {
 
 
-    fmt.Fprint(w,"Hello from:\n")
+    fmt.Fprint(w,"Hello from: ")
     fmt.Fprint(w,os.Getenv("ENV"))
     fmt.Fprint(w,"\n")
+    fmt.Fprint(w,"**************************\n")
     fmt.Fprint(w,"**jerusalem == palastine**\n")
+    fmt.Fprint(w,"**************************\n")
     fmt.Fprint(w,"\n")
     fmt.Fprint(w,"                              ##\n")
     fmt.Fprint(w,"                        ## ## ##        ==\n")
