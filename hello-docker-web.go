@@ -24,7 +24,7 @@ func main() {
 func index(w http.ResponseWriter, r *http.Request) {
 
 
-    fmt.Fprint(w,"**new feature1.0**\n")
+    fmt.Fprint(w,"**new feature**\n")
     fmt.Fprint(w,os.Getenv("ENV"))
     fmt.Fprint(w,"\n")
     fmt.Fprint(w,"**************************\n")
