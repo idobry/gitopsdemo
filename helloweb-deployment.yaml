@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
@@ -14,7 +15,7 @@ spec:
     spec:
       containers:
       - name: helloweb-app
-        image: grahamh/hello-docker-web:3.0
+        image: grahamh/hello-docker-web:2.0
         ports:
         - containerPort: 8080
 ---
@@ -27,8 +28,8 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 8080
-      nodePort: 33081
+  - port: 8080
+    nodePort: 33081
   selector:
     app: helloweb-app
 
