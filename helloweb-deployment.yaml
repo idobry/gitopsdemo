@@ -26,10 +26,10 @@ metadata:
   labels:
     app: helloweb-app
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
   - port: 8080
-    nodePort: 33081
+    targetPort: 8080
   selector:
     app: helloweb-app
 
