@@ -4,8 +4,8 @@ kind: Deployment
 metadata:
   name: kube-helloweb
   annotations:
-    fluxcd.io/automated: "true"
-    fluxcd.io/tag.helloweb-app: glob:*
+    flux.weave.works/automated: "true"
+    flux.weave.works/tag.helloweb-app: glob:*
 spec:
   selector:
     matchLabels:
