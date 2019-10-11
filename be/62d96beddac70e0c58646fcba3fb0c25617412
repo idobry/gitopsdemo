@@ -1,0 +1,1 @@
+{"jobID":"465048fa-c55b-c5a2-baf4-d18b1693ca95","spec":{"type":"policy","cause":{"Message":"","User":"Ido braunstain "},"spec":{"stg:helmrelease/podinfo-rc":{"add":{"automated":"true"},"remove":{}}}},"result":null}
