@@ -6,6 +6,8 @@ metadata:
   namespace: stg
   annotations:
     flux.weave.works/automated: 'false'
+    flux.weave.works/tag.chart-image: glob:stg-*
+    flux.weave.works/tag.chart-image2: glob:stg-*
 spec:
   releaseName: podinfo-rc
   chart:
