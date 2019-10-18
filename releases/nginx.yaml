@@ -4,6 +4,9 @@ kind: HelmRelease
 metadata:
   name: nginx-controller
   namespace: stg
+  annotations:
+    flux.weave.works/automated: "false"
+    flux.weave.works/tag.nginx: semver:~1.16
 spec:
   releaseName: nginx-controller
   chart:
