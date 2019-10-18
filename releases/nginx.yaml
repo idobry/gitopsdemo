@@ -1,0 +1,12 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: nginx-controller
+  namespace: stg
+spec:
+  releaseName: nginx-controller
+  chart:
+    git: git@github.com:helm/charts.git
+    path: stable/nginx-controller
+    ref: master
