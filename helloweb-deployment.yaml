@@ -5,7 +5,7 @@ metadata:
   name: kube-helloweb
   annotations:
     flux.weave.works/automated: "true"
-    flux.weave.works/tag.helloweb-app: glob:*
+    flux.weave.works/tag.helloweb-app: glob:3*
 spec:
   selector:
     matchLabels:
