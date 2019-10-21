@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: helloweb-app
-        image: grahamh/hello-docker-web:4.0
+        image: grahamh/hello-docker-web:3.0
         ports:
         - containerPort: 8080
 
